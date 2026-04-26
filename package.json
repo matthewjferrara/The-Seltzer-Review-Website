@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "adm-zip": "^0.5.17",
+    "puppeteer": "^24.40.0",
+    "sharp": "^0.34.5",
+    "xlsx": "^0.18.5"
+  }
+}

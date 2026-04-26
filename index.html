@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Seltzer Review — Ranking Every Spiked Seltzer</title>
+  <meta name="description" content="The Defnotfinitive Spiked Seltzer Review — one man's journey to drink and rank every spiked seltzer in the world. Browse 494+ reviews, ratings, and tasting notes.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="The Seltzer Review">
+  <meta property="og:title" content="The Seltzer Review — Ranking Every Spiked Seltzer">
+  <meta property="og:description" content="The Defnotfinitive Spiked Seltzer Review — one man's journey to drink and rank every spiked seltzer in the world. Browse 494+ reviews, ratings, and tasting notes.">
+  <meta property="og:image" content="First Seltzer.JPG">
+  <meta property="og:url" content="">
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Seltzer Review — Ranking Every Spiked Seltzer">
+  <meta name="twitter:description" content="The Defnotfinitive Spiked Seltzer Review — one man's journey to drink and rank every spiked seltzer in the world. Browse 494+ reviews, ratings, and tasting notes.">
+  <meta name="twitter:image" content="First Seltzer.JPG">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "The Seltzer Review",
+    "description": "The Defnotfinitive Spiked Seltzer Review — one man's journey to drink and rank every spiked seltzer in the world.",
+    "url": "",
+    "author": {
+      "@type": "Person",
+      "name": "Matt",
+      "description": "Spiked Seltzer Sommelier"
+    }
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #FF4757;
+      --primary-dark: #E0263A;
+      --secondary: #00D4B4;
+      --tertiary: #FFD60A;
+      --quaternary: #9B5DE5;
+      --bg-coral: #FFF0F1;
+      --bg-teal: #E8FFFC;
+      --bg-yellow: #FFFBE0;
+      --bg-purple: #F3EEFF;
+      --bg-neutral: #FFF8F5;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Nunito', sans-serif;
+      color: #1a1a1a;
+      background: #fff;
+      margin: 0;
+      font-size: 1.0625rem;
+      line-height: 1.6;
+    }
+
+    /* Logo */
+    .logo {
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+      font-family: 'Fredoka', sans-serif;
+      text-decoration: none;
+      color: inherit;
+    }
+    .logo-seltzer {
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .logo-dot {
+      color: var(--primary);
+      display: inline-flex;
+      align-items: center;
+      padding: 0 2px;
+    }
+    .logo-review {
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+
+    /* Navigation */
+    nav a {
+      font-family: 'Nunito', sans-serif;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #333;
+      text-decoration: none;
+      transition: color 0.2s;
+      font-weight: 700;
+    }
+    nav a:hover { color: var(--primary); }
+
+    /* Section heading — Fredoka bold */
+    .s-heading {
+      font-family: 'Fredoka', sans-serif;
+      font-weight: 600;
+      line-height: 1.2;
+      letter-spacing: 0.01em;
+    }
+
+    /* Placeholder image blocks */
+    @keyframes ph-pulse {
+      0%   { transform: scale(1);    }
+      40%  { transform: scale(1.06); }
+      100% { transform: scale(1);    }
+    }
+
+    /* Make each thumb a container so cqw is relative to its own width */
+    .thumb {
+      container-type: inline-size;
+    }
+
+    .ph {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: filter 0.2s;
+    }
+    .ph:hover {
+      animation: ph-pulse 1.2s ease-in-out infinite;
+      filter: brightness(1.08);
+      cursor: pointer;
+    }
+    .ph span {
+      font-family: 'Fredoka', sans-serif;
+      font-weight: 700;
+      color: rgba(255,255,255,0.95);
+      font-size: 13cqw;
+      letter-spacing: 0.02em;
+      text-align: center;
+      line-height: 1.15;
+      padding: 0 6%;
+    }
+
+    /* Byline — Nunito light italic for warm, relaxed sub-copy */
+    .byline {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 300;
+      font-style: italic;
+      font-size: 1.0625rem;
+      color: #666;
+      line-height: 1.65;
+    }
+
+    /* Tag / eyebrow */
+    .eyebrow {
+      font-family: 'Nunito', sans-serif;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    /* Recipe card */
+    .r-card { cursor: pointer; }
+    .r-card .thumb { overflow: hidden; }
+    .r-card .thumb img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.45s ease;
+    }
+    .r-card:hover .thumb img { transform: scale(1.05); }
+    .r-card h3 {
+      font-family: 'Fredoka', sans-serif;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .r-card:hover h3 { color: var(--primary); }
+
+    /* CTA Button */
+    .btn-green {
+      display: inline-block;
+      background: var(--primary);
+      color: #fff;
+      font-size: 0.6875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-weight: 600;
+      padding: 0.75rem 1.75rem;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .btn-green:hover { background: var(--primary-dark); }
+
+    /* View-all link */
+    .view-all {
+      font-size: 0.6875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--primary);
+      text-decoration: none;
+      border-bottom: 1px solid var(--primary);
+      padding-bottom: 1px;
+      transition: opacity 0.2s;
+    }
+    .view-all:hover { opacity: 0.7; }
+
+    /* Newsletter form */
+    .nl-input {
+      border: 1px solid #ccc;
+      border-right: none;
+      padding: 0.7rem 1rem;
+      font-size: 0.875rem;
+      outline: none;
+      width: 100%;
+      font-family: inherit;
+    }
+    .nl-input:focus { border-color: var(--primary); }
+
+    /* Footer link */
+    footer a {
+      color: #666;
+      text-decoration: none;
+      font-size: 0.8125rem;
+      transition: color 0.2s;
+    }
+    footer a:hover { color: var(--primary); }
+
+    /* Horizontal rule accent */
+    .accent-bar {
+      width: 36px;
+      height: 2px;
+      background: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    /* Sticky header shadow on scroll */
+    header { transition: box-shadow 0.2s; }
+
+    /* Hamburger */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+    }
+    .hamburger span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: #333;
+      border-radius: 2px;
+      transition: transform 0.2s, opacity 0.2s;
+    }
+
+    /* ─── MOBILE ───────────────────────────────────── */
+    @media (max-width: 768px) {
+
+      /* Header */
+      .hamburger { display: flex; }
+      .site-header-inner {
+        grid-template-columns: 1fr auto !important;
+        padding: 14px 20px !important;
+      }
+      .site-header-search {
+        display: flex !important;
+        gap: 12px !important;
+        align-items: center !important;
+      }
+      .site-header-search > button:last-child { display: none !important; }
+      .mobile-nav {
+        display: none !important;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border-bottom: 1px solid #e8e8e8;
+        flex-direction: column;
+        padding: 20px 24px;
+        gap: 18px;
+        z-index: 200;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      }
+      .mobile-nav.nav-open { display: flex !important; }
+
+      /* Video hero */
+      .video-hero { padding: 32px 20px !important; }
+
+      /* Welcome hero: stack columns */
+      .hero-section {
+        grid-template-columns: 1fr !important;
+        min-height: unset !important;
+      }
+      .hero-text { padding: 40px 24px !important; }
+      .hero-squares { min-height: 260px; }
+
+      /* Featured post */
+      .featured-section { grid-template-columns: 1fr !important; }
+
+      /* Section padding */
+      .section-pad { padding: 40px 20px !important; }
+
+      /* About grid: stack main + sidebar */
+      .about-grid { grid-template-columns: 1fr !important; }
+
+      /* About red box: stack text above, hide photo */
+      .about-box { flex-direction: column !important; }
+      .about-photo { display: none !important; }
+
+      /* Big 4: 2×2 */
+      .big4-grid { grid-template-columns: repeat(2, 1fr) !important; }
+
+      /* New Videos: 2 columns */
+      .videos-grid { grid-template-columns: repeat(2, 1fr) !important; }
+
+      /* Blog: single column */
+      .blog-grid-top { grid-template-columns: 1fr !important; }
+      .blog-grid-bottom { grid-template-columns: 1fr !important; }
+
+      /* Socials: single column */
+      .socials-grid { grid-template-columns: 1fr !important; }
+
+      /* Misc: 2 columns */
+      .misc-grid { grid-template-columns: repeat(2, 1fr) !important; }
+
+      /* About box text smaller on mobile */
+      .about-box p { font-size: 0.85rem !important; line-height: 1.6 !important; margin-bottom: 8px !important; }
+
+      /* Top 5 sidebar compact on mobile */
+      .about-grid > div:last-child { padding: 20px !important; }
+      .about-grid > div:last-child ul { gap: 10px !important; }
+      .about-grid > div:last-child li { padding-bottom: 10px !important; }
+
+      /* Hero squares min height */
+      .hero-squares { min-height: 320px !important; }
+
+      /* Featured section image height */
+      .featured-section img { max-height: 260px; object-fit: cover; }
+
+      /* Video hero less padding + smaller logo */
+      .video-hero { padding: 24px 16px !important; }
+      .video-hero .logo-seltzer,
+      .video-hero .logo-review { font-size: 1.8rem !important; }
+      .video-hero .logo-dot svg { width: 18px !important; height: 23px !important; }
+      .video-hero > div > div:first-child { margin-bottom: 16px !important; }
+
+      /* Footer */
+      .footer-inner {
+        flex-direction: column !important;
+        gap: 8px !important;
+        text-align: center !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ─── HEADER ─────────────────────────────────────────────── -->
+  <header style="position: sticky; top: 0; background: #fff; z-index: 100; border-bottom: 1px solid #e8e8e8;">
+    <!-- Main header row -->
+    <div class="site-header-inner" style="display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; padding: 14px 48px;">
+      <a class="logo" href="#">
+        <span class="logo-seltzer">The Seltzer</span>
+        <span class="logo-dot"><svg width="14" height="18" viewBox="0 0 14 18" xmlns="http://www.w3.org/2000/svg"><circle cx="7" cy="15.5" r="2.2" fill="currentColor"/><circle cx="3" cy="10.5" r="1.7" fill="currentColor"/><circle cx="11" cy="9.5" r="1.3" fill="currentColor"/><circle cx="6" cy="4.5" r="1.2" fill="currentColor"/><circle cx="10.5" cy="3" r="0.85" fill="currentColor"/></svg></span>
+        <span class="logo-review">Review</span>
+      </a>
+
+      <nav class="mobile-nav" style="display: flex; gap: 32px; align-items: center;">
+        <a href="reviews.html">Spiked Seltzer List</a>
+        <a href="#about">About</a>
+        <a href="#videos">Videos</a>
+        <a href="#blog">Blog</a>
+        <a href="#socials">Socials</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="site-header-search" style="display: flex; justify-content: flex-end; align-items: center; gap: 16px;">
+        <button class="hamburger" id="hamburgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+        <button style="display: flex; align-items: center; gap: 6px; background: none; border: none; cursor: pointer; color: #555; font-family: inherit; transition: color .2s;" onmouseenter="this.style.color='#FF4757'" onmouseleave="this.style.color='#555'">
+          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          <span style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.12em;">Search</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ─── VIDEO HERO ─────────────────────────────────────────── -->
+    <section class="video-hero" style="background: #0d0d0d; padding: 64px 48px; position: relative; overflow: hidden;">
+      <!-- Background bubble accents -->
+      <div style="position: absolute; top: -60px; left: -60px; width: 280px; height: 280px; border-radius: 50%; background: radial-gradient(circle, rgba(255,71,87,0.18) 0%, transparent 70%); pointer-events: none;"></div>
+      <div style="position: absolute; bottom: -80px; right: -40px; width: 320px; height: 320px; border-radius: 50%; background: radial-gradient(circle, rgba(0,212,180,0.14) 0%, transparent 70%); pointer-events: none;"></div>
+      <div style="position: absolute; top: 40%; left: 55%; width: 200px; height: 200px; border-radius: 50%; background: radial-gradient(circle, rgba(155,93,229,0.12) 0%, transparent 70%); pointer-events: none;"></div>
+
+      <div style="max-width: 960px; margin: 0 auto; position: relative; z-index: 1;">
+        <!-- Logo -->
+        <div style="text-align: center; margin-bottom: 32px;">
+          <a class="logo" href="#" style="justify-content: center; color: #fff;">
+            <span class="logo-seltzer" style="font-size: 3.6rem; color: #fff;">The Seltzer</span>
+            <span class="logo-dot" style="color: #FF4757;"><svg width="36" height="46" viewBox="0 0 14 18" xmlns="http://www.w3.org/2000/svg"><circle cx="7" cy="15.5" r="2.2" fill="currentColor"/><circle cx="3" cy="10.5" r="1.7" fill="currentColor"/><circle cx="11" cy="9.5" r="1.3" fill="currentColor"/><circle cx="6" cy="4.5" r="1.2" fill="currentColor"/><circle cx="10.5" cy="3" r="0.85" fill="currentColor"/></svg></span>
+            <span class="logo-review" style="font-size: 3.6rem; color: #fff;">Review</span>
+          </a>
+        </div>
+
+        <!-- Video player -->
+        <!-- SWAP VIDEO: replace the src URL with your YouTube embed link -->
+        <!-- e.g. https://www.youtube.com/embed/YOUR_VIDEO_ID -->
+        <div style="position: relative; width: 100%; padding-bottom: 56.25%; border-radius: 6px; overflow: hidden; box-shadow: 0 24px 64px rgba(0,0,0,0.5);">
+          <iframe
+            src="https://www.youtube.com/embed/qwWOEjmDi2k"
+            title="The Seltzer Review – Latest Video"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+          </iframe>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ─── HERO ───────────────────────────────────────────────── -->
+    <section class="hero-section" style="display: grid; grid-template-columns: 1fr 1fr; min-height: 520px;">
+      <!-- Left: text -->
+      <div class="hero-text" style="background: #FFF8F5; display: flex; flex-direction: column; justify-content: center; padding: 64px 72px;">
+        <p class="eyebrow" style="margin: 0 0 12px;">Welcome</p>
+        <h1 class="s-heading" style="font-size: clamp(2.4rem, 4vw, 3.4rem); margin: 0 0 20px; color: #111;">
+          Drinking all<br>the seltzers so<br>you don't have to.
+        </h1>
+        <p class="byline" style="margin: 0 0 16px; max-width: 340px; font-size: 1.15rem;">
+          I'm on a journey to drink every Spiked Seltzer in the world.
+        </p>
+        <p class="byline" style="margin: 0 0 32px; max-width: 340px; font-size: 1.15rem;">
+          View the full Spiked Seltzer Review list and see where your favorite seltzer lands!
+        </p>
+        <a href="reviews.html" class="btn-green" style="align-self: flex-start;">Browse All Seltzers</a>
+      </div>
+      <!-- Right: 2×2 photo grid -->
+      <div class="hero-squares" style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr;">
+        <a href="reviews.html" class="r-card" style="text-decoration:none;"><div class="thumb" style="height: 100%;"><div class="ph" style="background:#FF4757; position: relative; overflow: hidden;"><img src="brand_assets/emotefull.png" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center;"></div></div></a>
+        <a href="reviews.html" class="r-card" style="text-decoration:none;"><div class="thumb" style="height: 100%;"><div class="ph" style="background:#00D4B4; position: relative; overflow: hidden;"><img src="brand_assets/thinker2.png" alt="" style="position: absolute; top: 12%; left: 10%; width: 80%; height: 80%; object-fit: contain; object-position: center bottom;"></div></div></a>
+        <a href="reviews.html" class="r-card" style="text-decoration:none;"><div class="thumb" style="height: 100%;"><div class="ph" style="background:#FFD60A; position: relative; overflow: hidden;"><img src="brand_assets/Seltzers%20In%20Fridge.png" alt="Seltzers in fridge" style="position: absolute; top: 12.5%; left: 12.5%; width: 75%; height: 75%; object-fit: cover; object-position: center; border-radius: 4px;"></div></div></a>
+        <a href="reviews.html" class="r-card" style="text-decoration:none;"><div class="thumb" style="height: 100%;"><div class="ph" style="background:#9B5DE5; position: relative; overflow: hidden;"><img src="brand_assets/ArmFlipped.png" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; object-position: center;"></div></div></a>
+      </div>
+    </section>
+
+    <!-- ─── FEATURED POST ──────────────────────────────────────── -->
+    <section class="featured-section" style="display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid #ececec;">
+      <div style="background: #E8FFFC; display: flex; flex-direction: column; justify-content: center; padding: 56px 72px;">
+        <p class="eyebrow" style="margin: 0 0 10px;">Check out the Newest Seltzer on the Block</p>
+        <div class="accent-bar"></div>
+        <h2 class="s-heading" style="font-size: 1.75rem; margin: 0 0 16px; color: #111; line-height: 1.3;">
+          Dillon's — Black Cherry & A Touch Of Cranberry
+        </h2>
+        <p class="byline" style="margin: 0 0 20px; font-size: 1.05rem;">
+          The newest addition to the Defnotfinitive Hard Seltzer Rankings. See how it stacks up against the competition.
+        </p>
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
+          <span style="font-size: 0.75rem; color: #999; text-transform: uppercase; letter-spacing: 0.1em;">Apr 23, 2026</span>
+          <span style="color: #ccc;">—</span>
+          <span style="font-size: 0.75rem; color: #999; text-transform: uppercase; letter-spacing: 0.1em;">Rank #83</span>
+        </div>
+        <a href="reviews.html?open=83" style="display: inline-flex; align-items: center; gap: 8px; color: var(--primary); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.14em; text-decoration: none; font-weight: 600; transition: gap .2s;" onmouseenter="this.style.gap='14px'" onmouseleave="this.style.gap='8px'">
+          See Full Review
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <div style="background:#E8FFFC; display:flex; align-items:center; justify-content:center; min-height:360px;"><img src="seltzer-images/all/083-dillons-black-cherry-cranberry.jpg" alt="Dillon's Black Cherry & A Touch Of Cranberry" style="width:50%; object-fit:contain;"></div>
+    </section>
+
+    <!-- ─── POPULAR MEAL PLANS ─────────────────────────────────── -->
+    <section class="section-pad" style="padding: 72px 48px; background: #F5F0FF;">
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 36px;">
+        <div>
+          <p class="eyebrow" style="margin: 0 0 8px;">Alcohol Type</p>
+          <h2 class="s-heading" style="font-size: 1.75rem; margin: 0;">The Big 4</h2>
+        </div>
+        <a href="reviews.html" class="view-all">View All</a>
+      </div>
+
+      <div class="big4-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;">
+        <a href="reviews.html?filter=FMB" class="r-card" style="text-decoration:none;">
+          <div class="thumb" style="aspect-ratio: 1; margin-bottom: 12px;"><div class="ph" style="background:#FF4757;"><span>FMB</span></div></div>
+        </a>
+        <a href="reviews.html?filter=Vodka" class="r-card" style="text-decoration:none;">
+          <div class="thumb" style="aspect-ratio: 1; margin-bottom: 12px;"><div class="ph" style="background:#00D4B4;"><span>Vodka</span></div></div>
+        </a>
+        <a href="reviews.html?filter=Tequila" class="r-card" style="text-decoration:none;">
+          <div class="thumb" style="aspect-ratio: 1; margin-bottom: 12px;"><div class="ph" style="background:#FFD60A;"><span style="color:rgba(0,0,0,0.72);">Tequila</span></div></div>
+        </a>
+        <a href="reviews.html?filter=Gin" class="r-card" style="text-decoration:none;">
+          <div class="thumb" style="aspect-ratio: 1; margin-bottom: 12px;"><div class="ph" style="background:#9B5DE5;"><span>Gin</span></div></div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ─── COOKIE RECIPES ─────────────────────────────────────── -->
+    <section id="about" class="section-pad" style="padding: 72px 48px; background: #FFF8F5;">
+      <div class="about-grid" style="display: grid; grid-template-columns: 1fr 280px; gap: 40px; align-items: stretch;">
+        <!-- Main grid -->
+        <div style="display: flex; flex-direction: column;">
+          <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 36px;">
+            <div>
+              <p class="eyebrow" style="margin: 0 0 8px;">About</p>
+              <h2 class="s-heading" style="font-size: 1.75rem; margin: 0;">Matt, the Spiked Seltzer Sommelier</h2>
+            </div>
+          </div>
+          <div class="r-card about-box" style="background:#FF6B6B; flex: 1; display: flex; flex-direction: row; align-items: stretch; gap: 0; overflow: hidden; padding: 0;">
+            <div style="flex: 1; padding: 28px; overflow-y: auto; color: #fff; font-family: 'Nunito', sans-serif;">
+              <p style="font-size: 1.02rem; line-height: 1.75; margin: 0 0 12px;"><em>As far back as I remember, I always wanted to be a spiked seltzer aficionado.</em></p>
+              <p style="font-size: 1.02rem; line-height: 1.75; margin: 0 0 12px;">Drinking has always been a passion of mine. It's been near and dear to my heart since I was just a young man. I still remember the day that I had my first <strong>Spiked Seltzer</strong>: It was a crisp Autumn evening, October 31st 2015, and my then girlfriend (now wife) Rebecca and I had tickets to a Halloween beer festival in Manhattan.</p>
+              <p style="font-size: 1.02rem; line-height: 1.75; margin: 0 0 12px;">Beer festivals were all the rage in NYC circa 2010s, and brewers from far and wide would gather their tastiest beverages and join to let boozehounds like me sample their stock. Armed with a shot glass and a dream, I went from booth to booth consuming one shot after another of the latest and greatest brews.</p>
+              <p style="font-size: 1.02rem; line-height: 1.75; margin: 0 0 12px;">Then, it hit me like a bolt of lightning: A booth with the strangest concoction anyone had ever seen, a <strong>"Spiked Seltzer."</strong> It was <em>"Bon &amp; Viv,"</em> the original spiked seltzer, and this was before the days of White Claw, Truly, and every name brand seltzer hit the market. I remember it was cool, refreshing, flavorful, and had no alcohol taste at all with a fraction of the calories. I recall saying to anyone who would listen, this thing is going to be huge! And the rest was history: <strong>Spiked Seltzers</strong> hit the block in a tremendous way, and by 2020 <strong>Spiked Seltzers</strong> were everywhere. You couldn't throw a rock without hitting a <strong>Spiked Seltzer.</strong> They were at bars, restaurants, BBQs, beaches, parks, concerts, games, shows, and even on the internet.</p>
+              <p style="font-size: 1.02rem; line-height: 1.75; margin: 0 0 12px;">Ever since that fateful day in 2015, I've been on a journey to drink every <strong>Spiked Seltzer</strong> that exists, and it became official in April of 2024 by starting the first entry on the <strong>Defnotfinitve Spiked Seltzer Review</strong> list. For the first time in history, there exists a list of every <strong>Spiked Seltzer</strong> with a review and quality ranking, so you can be confident that you'll be getting a quality drink before you ever lay your lips on the can of a Spiked Seltzer.</p>
+              <p style="font-size: 1.02rem; line-height: 1.75; margin: 0;">Join me as I drink every <strong>Spiked Seltzer</strong>, and let's take this journey together!</p>
+            </div>
+            <div class="about-photo" style="flex: 0 0 26%; position: relative;">
+              <img src="First%20Seltzer.JPG" alt="First Seltzer" style="position: absolute; top: 28px; bottom: 28px; left: 14px; right: 14px; width: calc(100% - 28px); height: calc(100% - 56px); object-fit: cover; object-position: center top; display: block; border-radius: 6px;">
+            </div>
+          </div>
+        </div>
+        <!-- Sidebar -->
+        <div style="background: #fff; padding: 28px; border: 1px solid #e8efe8;">
+          <p class="eyebrow" style="margin: 0 0 10px;">Top Five</p>
+          <div class="accent-bar"></div>
+          <p class="s-heading" style="font-size: 1.1rem; margin: 0 0 20px; line-height: 1.35;">The Top 5 Greatest Spiked Seltzers of All Time</p>
+          <ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px;">
+            <li style="display: flex; align-items: center; gap: 10px; padding-bottom: 14px; border-bottom: 1px solid #f0ede8;">
+              <a href="reviews.html?open=1" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:inherit;width:100%;">
+                <div style="position:relative;width:80px;height:80px;flex-shrink:0;border-radius:4px;overflow:hidden;background:#FF4757;"><img src="seltzer-images/montauk-pink-lemonade.png" alt="Montauk Pink Lemonade" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;"></div>
+                <span style="font-size: 0.8125rem; line-height: 1.4; font-family: 'Fredoka', sans-serif;">Montauk – Pink Lemonade</span>
+              </a>
+            </li>
+            <li style="display: flex; align-items: center; gap: 10px; padding-bottom: 14px; border-bottom: 1px solid #f0ede8;">
+              <a href="reviews.html?open=2" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:inherit;width:100%;">
+                <div style="position:relative;width:80px;height:80px;flex-shrink:0;border-radius:4px;overflow:hidden;background:#00D4B4;"><img src="seltzer-images/whiteclaw-black-cherry.png" alt="White Claw Black Cherry" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;"></div>
+                <span style="font-size: 0.8125rem; line-height: 1.4; font-family: 'Fredoka', sans-serif;">White Claw – Black Cherry</span>
+              </a>
+            </li>
+            <li style="display: flex; align-items: center; gap: 10px; padding-bottom: 14px; border-bottom: 1px solid #f0ede8;">
+              <a href="reviews.html?open=3" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:inherit;width:100%;">
+                <div style="position:relative;width:80px;height:80px;flex-shrink:0;border-radius:4px;overflow:hidden;background:#FFD60A;"><img src="seltzer-images/kirkland-mango.png" alt="Kirkland Mango" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;"></div>
+                <span style="font-size: 0.8125rem; line-height: 1.4; font-family: 'Fredoka', sans-serif;">Kirkland – Mango</span>
+              </a>
+            </li>
+            <li style="display: flex; align-items: center; gap: 10px; padding-bottom: 14px; border-bottom: 1px solid #f0ede8;">
+              <a href="reviews.html?open=4" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:inherit;width:100%;">
+                <div style="position:relative;width:80px;height:80px;flex-shrink:0;border-radius:4px;overflow:hidden;background:#9B5DE5;"><img src="seltzer-images/montauk-original-lemonade.png" alt="Montauk Original Lemonade" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;"></div>
+                <span style="font-size: 0.8125rem; line-height: 1.4; font-family: 'Fredoka', sans-serif;">Montauk – Original Lemonade</span>
+              </a>
+            </li>
+            <li style="display: flex; align-items: center; gap: 10px;">
+              <a href="reviews.html?open=5" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:inherit;width:100%;">
+                <div style="position:relative;width:80px;height:80px;flex-shrink:0;border-radius:4px;overflow:hidden;background:#FF6B00;"><img src="seltzer-images/truly-cherry-pop.png" alt="Truly Cherry Pop" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;"></div>
+                <span style="font-size: 0.8125rem; line-height: 1.4; font-family: 'Fredoka', sans-serif;">Truly – Cherry Pop</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── NEW VIDEOS ───────────────────────────────────────────── -->
+    <section id="videos" class="section-pad" style="padding: 72px 48px; background: #FFF8EC;">
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 36px;">
+        <div>
+          <p class="eyebrow" style="margin: 0 0 8px;">Clips</p>
+          <h2 class="s-heading" style="font-size: 1.75rem; margin: 0;">New Videos</h2>
+        </div>
+        <a href="https://www.youtube.com/@defnot_matty9915" target="_blank" rel="noopener" class="view-all">View All</a>
+      </div>
+
+      <div class="videos-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
+        <div class="r-card">
+          <div style="position: relative; width: 100%; padding-bottom: 75%; margin-bottom: 14px; border-radius: 4px; overflow: hidden;">
+            <div class="ph" style="position: absolute; inset: 0; background: #00D4B4;"></div>
+            <iframe src="https://www.youtube.com/embed/Y7k1HiBqGuw" title="Spiked Seltzer Review: Fresca - Mixed Berry Citrus" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 10px; left: 10px; width: calc(100% - 20px); height: calc(100% - 20px);"></iframe>
+          </div>
+          <p class="eyebrow" style="margin: 0 0 4px;">Videos</p>
+          <h3 style="font-size: 1rem; margin: 0 0 4px; line-height: 1.4;">Spiked Seltzer Review: Fresca - Mixed Berry Citrus</h3>
+          <p style="font-size: 0.78rem; color: #aaa; margin: 0;">1m 36s</p>
+        </div>
+        <div class="r-card">
+          <div style="position: relative; width: 100%; padding-bottom: 75%; margin-bottom: 14px; border-radius: 4px; overflow: hidden;">
+            <div class="ph" style="position: absolute; inset: 0; background: #9B5DE5;"></div>
+            <iframe src="https://www.youtube.com/embed/7A5JQEgRFs4" title="Spiked Seltzer Review: Dillon's - Black Cherry & A Touch Of Cranberry" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 10px; left: 10px; width: calc(100% - 20px); height: calc(100% - 20px);"></iframe>
+          </div>
+          <p class="eyebrow" style="margin: 0 0 4px;">Videos</p>
+          <h3 style="font-size: 1rem; margin: 0 0 4px; line-height: 1.4;">Spiked Seltzer Review: Dillon's - Black Cherry & A Touch Of Cranberry</h3>
+          <p style="font-size: 0.78rem; color: #aaa; margin: 0;">1m 43s</p>
+        </div>
+        <div class="r-card">
+          <div style="position: relative; width: 100%; padding-bottom: 75%; margin-bottom: 14px; border-radius: 4px; overflow: hidden;">
+            <div class="ph" style="position: absolute; inset: 0; background: #00D4B4;"></div>
+            <iframe src="https://www.youtube.com/embed/DTTpdzGhn2Q" title="Seltzer Review: Lake Hour - Peach Jasmine" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 10px; left: 10px; width: calc(100% - 20px); height: calc(100% - 20px);"></iframe>
+          </div>
+          <p class="eyebrow" style="margin: 0 0 4px;">Videos</p>
+          <h3 style="font-size: 1rem; margin: 0 0 4px; line-height: 1.4;">Seltzer Review: Lake Hour - Peach Jasmine</h3>
+          <p style="font-size: 0.78rem; color: #aaa; margin: 0;">1m 55s</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── FROM THE BLOG ────────────────────────────────────────── -->
+    <section id="blog" class="section-pad" style="padding: 80px 48px; background: #FFF5F8;">
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 48px;">
+        <div>
+          <h2 class="s-heading" style="font-size: 2rem; margin: 0;">The Pen is Mightier</h2>
+        </div>
+        <a href="#" class="view-all">All Posts</a>
+      </div>
+
+      <!-- Featured post + 2 side posts -->
+      <div class="blog-grid-top" style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-bottom: 40px;">
+        <!-- Large featured -->
+        <div class="r-card" style="display: flex; flex-direction: column;">
+          <div class="thumb" style="aspect-ratio: 3/2; margin-bottom: 20px; position: relative;">
+            <div class="ph" style="background:#00D4B4; height:100%;"><span>Blog Post</span></div>
+            <span style="position: absolute; top: 16px; left: 16px; background: var(--primary); color: #fff; font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 700; padding: 4px 10px;">Featured</span>
+          </div>
+          <p class="byline" style="font-size: 1rem; margin: 0; color: #aaa; font-style: italic;">Coming Soon</p>
+        </div>
+
+        <!-- Two stacked posts -->
+        <div style="display: flex; flex-direction: column; gap: 28px;">
+          <div class="r-card" style="display: grid; grid-template-columns: 160px 1fr; gap: 20px; align-items: start;">
+            <div class="thumb" style="aspect-ratio: 1; flex-shrink: 0;"><div class="ph" style="background:#FF4757;"><span>Post</span></div></div>
+            <div><p class="byline" style="font-size: 0.9rem; margin: 0; color: #aaa; font-style: italic;">Coming Soon</p></div>
+          </div>
+          <div style="height: 1px; background: #f0ede8;"></div>
+          <div class="r-card" style="display: grid; grid-template-columns: 160px 1fr; gap: 20px; align-items: start;">
+            <div class="thumb" style="aspect-ratio: 1; flex-shrink: 0;"><div class="ph" style="background:#9B5DE5;"><span>Post</span></div></div>
+            <div><p class="byline" style="font-size: 0.9rem; margin: 0; color: #aaa; font-style: italic;">Coming Soon</p></div>
+          </div>
+          <div style="height: 1px; background: #f0ede8;"></div>
+          <div class="r-card" style="display: grid; grid-template-columns: 160px 1fr; gap: 20px; align-items: start;">
+            <div class="thumb" style="aspect-ratio: 1; flex-shrink: 0;"><div class="ph" style="background:#FFD60A;"><span style="color:rgba(0,0,0,0.72);">Post</span></div></div>
+            <div><p class="byline" style="font-size: 0.9rem; margin: 0; color: #aaa; font-style: italic;">Coming Soon</p></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom row: 3 equal cards -->
+      <div class="blog-grid-bottom" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; padding-top: 32px; border-top: 1px solid #f0ede8;">
+        <div class="r-card">
+          <div class="thumb" style="aspect-ratio: 16/9; margin-bottom: 16px;"><div class="ph" style="background:#9B5DE5;"><span style="color:rgba(0,0,0,0.6);">Blog</span></div></div>
+          <p class="byline" style="font-size: 0.9rem; margin: 0; color: #aaa; font-style: italic;">Coming Soon</p>
+        </div>
+        <div class="r-card">
+          <div class="thumb" style="aspect-ratio: 16/9; margin-bottom: 16px;"><div class="ph" style="background:#FFD60A;"><span style="color:rgba(0,0,0,0.6);">Blog</span></div></div>
+          <p class="byline" style="font-size: 0.9rem; margin: 0; color: #aaa; font-style: italic;">Coming Soon</p>
+        </div>
+        <div class="r-card">
+          <div class="thumb" style="aspect-ratio: 16/9; margin-bottom: 16px;"><div class="ph" style="background:#00D4B4;"><span style="color:rgba(0,0,0,0.6);">Blog</span></div></div>
+          <p class="byline" style="font-size: 0.9rem; margin: 0; color: #aaa; font-style: italic;">Coming Soon</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── SALADS ─────────────────────────────────────────────── -->
+    <section id="socials" class="section-pad" style="padding: 72px 48px; background: #F0FFF8;">
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 36px;">
+        <div>
+          <p class="eyebrow" style="margin: 0 0 8px;">Socials</p>
+          <h2 class="s-heading" style="font-size: 1.75rem; margin: 0;">Matt on the Internet</h2>
+        </div>
+      </div>
+
+      <div class="socials-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
+        <a href="https://www.twitch.tv/defnot_matty" target="_blank" rel="noopener" class="r-card" style="text-decoration:none;color:inherit;display:block;">
+          <div class="thumb" style="aspect-ratio: 4/3; margin-bottom: 14px; overflow:hidden; border-radius:4px;"><img src="Twitch%20Channel%20-%20Snapshot.png" alt="Twitch Channel" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+          <p class="eyebrow" style="margin: 0 0 4px;">Live Streaming</p>
+          <h3 style="font-size: 1rem; margin: 0 0 6px; line-height: 1.4;">Twitch</h3>
+          <p style="font-size: 0.78rem; color: #aaa; margin: 0;">Live Seltzer Reviews, Games, and Yapping</p>
+        </a>
+        <a href="https://discord.gg/BmjkWTjf" target="_blank" rel="noopener" class="r-card" style="text-decoration:none;color:inherit;display:block;">
+          <div class="thumb" style="aspect-ratio: 4/3; margin-bottom: 14px; overflow:hidden; border-radius:4px;"><img src="Discord%20Channel%20-%20Snapshot.png" alt="Discord Channel" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+          <p class="eyebrow" style="margin: 0 0 4px;">Community</p>
+          <h3 style="font-size: 1rem; margin: 0 0 6px; line-height: 1.4;">Discord</h3>
+          <p style="font-size: 0.78rem; color: #aaa; margin: 0;">Continue the Discourse, join the Discord</p>
+        </a>
+        <a href="https://www.youtube.com/@defnot_matty9915" target="_blank" rel="noopener" class="r-card" style="text-decoration:none;color:inherit;display:block;">
+          <div class="thumb" style="aspect-ratio: 4/3; margin-bottom: 14px; overflow:hidden; border-radius:4px;"><img src="Youtube%20Channel%20-%20Snapshot.png" alt="YouTube Channel" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+          <p class="eyebrow" style="margin: 0 0 4px;">Videos</p>
+          <h3 style="font-size: 1rem; margin: 0 0 6px; line-height: 1.4;">YouTube</h3>
+          <p style="font-size: 0.78rem; color: #aaa; margin: 0;">More Videos, Long and Short</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- ─── HEALTHY SMOOTHIES ──────────────────────────────────── -->
+    <section id="misc" class="section-pad" style="padding: 72px 48px; background: #E8FFFC;">
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 36px;">
+        <div>
+          <p class="eyebrow" style="margin: 0 0 8px;">Misc.</p>
+          <h2 class="s-heading" style="font-size: 1.75rem; margin: 0;">Other Videos and Clips</h2>
+        </div>
+        <a href="#" class="view-all">View All Smoothies</a>
+      </div>
+
+      <div class="misc-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;">
+        <div class="r-card">
+          <div style="position: relative; width: 100%; aspect-ratio: 4/3; margin-bottom: 12px; border-radius: 4px; overflow: hidden;">
+            <video controls style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;" preload="metadata">
+              <source src="Matt%20Promo%20V2.mp4" type="video/mp4">
+            </video>
+          </div>
+          <h3 style="font-size: 0.875rem; margin: 0 0 4px; line-height: 1.4;">Won't you help?</h3>
+          <p style="font-size: 0.78rem; color: #aaa; margin: 0;">3m 34s</p>
+        </div>
+        <div class="r-card">
+          <div style="position: relative; width: 100%; aspect-ratio: 4/3; margin-bottom: 12px; border-radius: 4px; overflow: hidden;">
+            <iframe src="https://clips.twitch.tv/embed?clip=ResilientZealousEndiveDatSheffy-0qO942YzOUmJ92NE&parent=localhost" frameborder="0" allowfullscreen scrolling="no" style="position: absolute; inset: 0; width: 100%; height: 100%;"></iframe>
+          </div>
+        </div>
+        <div class="r-card">
+          <div style="position: relative; width: 100%; aspect-ratio: 4/3; margin-bottom: 12px; border-radius: 4px; overflow: hidden;">
+            <iframe src="https://www.youtube.com/embed/yA7q2O-fyw0" frameborder="0" allowfullscreen style="position: absolute; inset: 0; width: 100%; height: 100%;"></iframe>
+          </div>
+          <h3 style="font-size: 0.875rem; margin: 0 0 4px; line-height: 1.4;">Live Stream: 04/24/2026</h3>
+          <p style="font-size: 0.78rem; color: #aaa; margin: 0;">4h 40m</p>
+        </div>
+        <div class="r-card">
+          <div style="position: relative; width: 100%; aspect-ratio: 4/3; margin-bottom: 12px; border-radius: 4px; overflow: hidden;">
+            <iframe src="https://www.youtube.com/embed/6VZO4U7LKSs" frameborder="0" allowfullscreen style="position: absolute; inset: 0; width: 100%; height: 100%;"></iframe>
+          </div>
+          <h3 style="font-size: 0.875rem; margin: 0 0 4px; line-height: 1.4;">Beach Test - White Claw - Black Cherry</h3>
+          <p style="font-size: 0.78rem; color: #aaa; margin: 0;">4m 8s</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── NEWSLETTER ─────────────────────────────────────────── -->
+    <section style="padding: 80px 48px; background: #FFF0F1; text-align: center;">
+      <div style="max-width: 520px; margin: 0 auto;">
+        <a class="logo" href="#" style="justify-content: center; margin-bottom: 20px;">
+          <span class="logo-seltzer" style="font-size: 0.95rem;">The Seltzer</span>
+          <span class="logo-dot"><svg width="12" height="15" viewBox="0 0 14 18" xmlns="http://www.w3.org/2000/svg"><circle cx="7" cy="15.5" r="2.2" fill="currentColor"/><circle cx="3" cy="10.5" r="1.7" fill="currentColor"/><circle cx="11" cy="9.5" r="1.3" fill="currentColor"/><circle cx="6" cy="4.5" r="1.2" fill="currentColor"/><circle cx="10.5" cy="3" r="0.85" fill="currentColor"/></svg></span>
+          <span class="logo-review" style="font-size: 1rem;">Review</span>
+        </a>
+        <p class="eyebrow" style="margin: 0 0 10px;">Never Miss a Seltzer</p>
+        <h2 class="s-heading" style="font-size: 1.75rem; margin: 0 0 28px; color: #111;">Join the Community</h2>
+        <a href="https://discord.gg/BmjkWTjf" class="btn-green" style="text-decoration: none;">Discord</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ─── FOOTER ────────────────────────────────────────────────── -->
+  <footer id="contact" style="background: #fff; border-top: 1px solid #ececec; padding: 60px 48px 32px;">
+    <div class="footer-inner" style="border-top: 1px solid #f0f0f0; padding-top: 24px; display: flex; justify-content: space-between; align-items: center;">
+      <p style="font-size: 0.75rem; color: #bbb; margin: 0;">© 2026 The Seltzer Review · All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script>
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const mobileNav = document.querySelector('.mobile-nav');
+    hamburgerBtn.addEventListener('click', () => {
+      mobileNav.classList.toggle('nav-open');
+    });
+    document.addEventListener('click', e => {
+      if (!e.target.closest('header')) mobileNav.classList.remove('nav-open');
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+
+# Large media files (exceed GitHub 100MB limit)
+Matt Promo V2.mp4
+brand_assets/countdown.mp4
+Defnotfinitive Hard Seltzer Rankings .xlsx
+
+# Working files
+temporary screenshots/
+About Section.docx
+cookieandkate.com_.png
+brand_assets/Seltzers In Fridge.HEIC
+
+# Build/utility scripts (not needed for deployment)
+screenshot.mjs
+screenshot_mobile.mjs
+screenshot_mobile_reviews.mjs
+screenshot_mobile_sections.mjs
+screenshot_modal.mjs
+build-reviews.mjs
+build-video-map.mjs
+extract-images.mjs
+
+# Logs
+npm-debug.log*
