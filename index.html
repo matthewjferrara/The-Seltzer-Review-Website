@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-49X33MQJR3"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18163035644"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-49X33MQJR3');
+    gtag('config', 'AW-18163035644');
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -260,6 +260,71 @@
       margin-bottom: 1rem;
     }
 
+    /* ── HERO LOGO LOCKUP ──────────────────────────────── */
+    .hero-logo-lockup {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+      text-decoration: none;
+    }
+    .hero-logo-the-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 0;
+    }
+    .hero-logo-the-line {
+      height: 1px;
+      width: 52px;
+      background: rgba(0,212,180,0.45);
+    }
+    .hero-logo-the {
+      font-family: 'Fredoka', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.5em;
+      text-indent: 0.5em;
+      color: #00D4B4;
+      text-transform: uppercase;
+    }
+    .hero-logo-seltzer {
+      font-family: 'Fredoka', sans-serif;
+      font-size: 5.2rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      line-height: 0.9;
+      color: #fff;
+      text-transform: uppercase;
+      text-shadow: 0 6px 32px rgba(255,71,87,0.22), 0 2px 8px rgba(0,0,0,0.4);
+    }
+    .hero-logo-divider {
+      width: 120px;
+      height: 1px;
+      background: rgba(255,255,255,0.12);
+      margin-top: 10px;
+    }
+    .hero-logo-review-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .hero-logo-stars {
+      font-family: 'Fredoka', sans-serif;
+      color: #FF4757;
+      font-size: 1rem;
+    }
+    .hero-logo-review {
+      font-family: 'Fredoka', sans-serif;
+      font-size: 1.35rem;
+      font-weight: 500;
+      letter-spacing: 0.3em;
+      text-indent: 0.3em;
+      color: rgba(255,255,255,0.88);
+      text-transform: uppercase;
+    }
+
     /* Sticky header shadow on scroll */
     header { transition: box-shadow 0.2s; }
 
@@ -455,10 +520,10 @@
 
       /* Video hero less padding + smaller logo */
       .video-hero { padding: 24px 16px !important; }
-      .video-hero .logo-seltzer,
-      .video-hero .logo-review { font-size: 1.8rem !important; }
-      .video-hero .logo-dot svg { width: 18px !important; height: 23px !important; }
       .video-hero > div > div:first-child { margin-bottom: 16px !important; }
+      .hero-logo-seltzer { font-size: 2.8rem !important; }
+      .hero-logo-the-line { width: 28px !important; }
+      .hero-logo-review { font-size: 1rem !important; letter-spacing: 0.2em !important; }
 
       /* Footer */
       .footer-inner {
@@ -512,10 +577,19 @@
       <div style="max-width: 960px; margin: 0 auto; position: relative; z-index: 1;">
         <!-- Logo -->
         <div style="text-align: center; margin-bottom: 32px;">
-          <a class="logo" href="#" style="justify-content: center; color: #fff;">
-            <span class="logo-seltzer" style="font-size: 3.6rem; color: #fff;">The Seltzer</span>
-            <span class="logo-dot" style="color: #FF4757;"><svg width="36" height="46" viewBox="0 0 14 18" xmlns="http://www.w3.org/2000/svg"><circle cx="7" cy="15.5" r="2.2" fill="currentColor"/><circle cx="3" cy="10.5" r="1.7" fill="currentColor"/><circle cx="11" cy="9.5" r="1.3" fill="currentColor"/><circle cx="6" cy="4.5" r="1.2" fill="currentColor"/><circle cx="10.5" cy="3" r="0.85" fill="currentColor"/></svg></span>
-            <span class="logo-review" style="font-size: 3.6rem; color: #fff;">Review</span>
+          <a href="#" class="hero-logo-lockup">
+            <div class="hero-logo-the-row">
+              <div class="hero-logo-the-line"></div>
+              <span class="hero-logo-the">The</span>
+              <div class="hero-logo-the-line"></div>
+            </div>
+            <span class="hero-logo-seltzer">Seltzer</span>
+            <div class="hero-logo-divider"></div>
+            <div class="hero-logo-review-row">
+              <span class="hero-logo-stars">✦</span>
+              <span class="hero-logo-review">Review</span>
+              <span class="hero-logo-stars">✦</span>
+            </div>
           </a>
         </div>
 
