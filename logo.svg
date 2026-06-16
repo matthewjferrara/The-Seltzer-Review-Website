@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 220" width="480" height="220" role="img" aria-label="The Seltzer Review">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&amp;display=swap');
+    </style>
+  </defs>
+
+  <!-- Background: pure black -->
+  <rect width="480" height="220" fill="#000000" rx="10"/>
+
+  <!-- Left bubble cluster (5-circle motif, scaled 3×, filled red) -->
+  <circle cx="48"   cy="120" r="6.6"  fill="#FF4757" fill-opacity="0.55"/>
+  <circle cx="36"   cy="105" r="5.1"  fill="#FF4757" fill-opacity="0.42"/>
+  <circle cx="60"   cy="102" r="3.9"  fill="#FF4757" fill-opacity="0.35"/>
+  <circle cx="45"   cy="87"  r="3.6"  fill="#FF4757" fill-opacity="0.28"/>
+  <circle cx="58.5" cy="82"  r="2.55" fill="#FF4757" fill-opacity="0.20"/>
+
+  <!-- Right bubble cluster (mirrored) -->
+  <circle cx="432"   cy="120" r="6.6"  fill="#FF4757" fill-opacity="0.55"/>
+  <circle cx="444"   cy="105" r="5.1"  fill="#FF4757" fill-opacity="0.42"/>
+  <circle cx="420"   cy="102" r="3.9"  fill="#FF4757" fill-opacity="0.35"/>
+  <circle cx="435"   cy="87"  r="3.6"  fill="#FF4757" fill-opacity="0.28"/>
+  <circle cx="421.5" cy="82"  r="2.55" fill="#FF4757" fill-opacity="0.20"/>
+
+  <!-- THE with decorative lines -->
+  <line x1="100" y1="68" x2="173" y2="68" stroke="#00D4B4" stroke-width="1" stroke-opacity="0.45"/>
+  <text x="240" y="73" text-anchor="middle" font-family="Fredoka, sans-serif" font-size="13" font-weight="600" fill="#00D4B4" letter-spacing="7">THE</text>
+  <line x1="307" y1="68" x2="380" y2="68" stroke="#00D4B4" stroke-width="1" stroke-opacity="0.45"/>
+
+  <!-- SELTZER -->
+  <text x="240" y="148" text-anchor="middle" font-family="Fredoka, sans-serif" font-size="84" font-weight="700" fill="#ffffff" letter-spacing="-1">SELTZER</text>
+
+  <!-- Divider line -->
+  <line x1="180" y1="157" x2="300" y2="157" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+
+  <!-- ✦ + REVIEW + ✦ (matches blog section-divider style) -->
+  <text x="180" y="184" text-anchor="end" font-family="Fredoka, sans-serif" font-size="15" fill="#FF4757">✦</text>
+  <text x="240" y="184" text-anchor="middle" font-family="Fredoka, sans-serif" font-size="19" font-weight="500" fill="rgba(255,255,255,0.88)" letter-spacing="5">REVIEW</text>
+  <text x="300" y="184" text-anchor="start" font-family="Fredoka, sans-serif" font-size="15" fill="#FF4757">✦</text>
+</svg>
