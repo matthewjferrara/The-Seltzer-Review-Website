@@ -5,7 +5,7 @@
 **Site:** theseltzerreview.com  
 **Purpose:** Matt's personal hub for ranking and reviewing 500+ spiked seltzers, tied to his YouTube channel (defnot_matty). Tagline: "The Defnotfinitive Spiked Seltzer Review."  
 **Deployment:** GitHub Pages — pushing to `main` branch deploys live automatically.  
-**Analytics:** Google Analytics G-49X33MQJR3  
+**Analytics:** Google Ads Conversion Tag AW-18163035644  
 **Repository:** `git remote` → GitHub (main branch = production)
 
 ---
@@ -320,6 +320,12 @@ git push origin main
 ```
 
 GitHub Pages auto-deploys. Live at theseltzerreview.com within ~1 minute.
+
+---
+
+## YouTube Workflows
+
+See **`WEBSITE_AND_YOUTUBE_UPDATE.md`** for the complete YouTube reference: all playlist IDs, OAuth reauth steps, description templates, tag strategy, thumbnail workflow, common issues, and standard prompts.
 
 ---
 
