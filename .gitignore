@@ -28,5 +28,8 @@ update_thumbnail.mjs
 update_video_metadata.mjs
 oauth_tokens.json
 
+# Local reference docs (keep off GitHub)
+WEBSITE_AND_YOUTUBE_UPDATE.md
+
 # Logs
 npm-debug.log*
