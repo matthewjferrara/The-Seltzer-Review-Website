@@ -18,6 +18,8 @@ screenshot_mobile.mjs
 screenshot_mobile_reviews.mjs
 screenshot_mobile_sections.mjs
 screenshot_modal.mjs
+screenshot-viewport.mjs
+screenshot-section.mjs
 build-reviews.mjs
 build-video-map.mjs
 extract-images.mjs
@@ -26,6 +28,7 @@ extract-images.mjs
 reauth_youtube.mjs
 update_thumbnail.mjs
 update_video_metadata.mjs
+update_shorts_metadata.mjs
 oauth_tokens.json
 
 # Local reference docs (keep off GitHub)
