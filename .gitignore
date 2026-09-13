@@ -29,6 +29,9 @@ reauth_youtube.mjs
 update_thumbnail.mjs
 update_video_metadata.mjs
 update_shorts_metadata.mjs
+add_tiktok_to_descriptions.mjs
+fix_private_shorts.mjs
+screenshot-mobile.mjs
 oauth_tokens.json
 
 # Local reference docs (keep off GitHub)
